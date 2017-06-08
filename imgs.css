@@ -1,0 +1,46 @@
+body{
+    width: 70%;
+    margin: 20px auto 70px;
+    background-color: azure;
+    font-size: 18px;
+}
+div{
+    text-align: center;
+    width: 100%;
+    margin: 40px 0;
+}
+span{
+    text-decoration: line-through;
+}
+a{
+    font-size: 18px;
+}
+.active:active{
+    color: brown;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+.hover:hover{
+    text-decoration: underline;
+    color: darkred;
+    border: 3px dotted darkgreen;
+    text-align: center;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+.back-attachment{
+    background-image: url(data.jpg);
+    height: 700px;
+    background-attachment: fixed;
+    padding-top: 70px;
+}
+.paragraph{
+    background-color: rgba(218,70,58,0.9);
+    text-align: right;
+    color: white;
+    margin-top: 170px;
+}
