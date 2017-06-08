@@ -7,13 +7,18 @@ body{
 div{
     text-align: center;
     width: 100%;
-    margin: 40px 0;
+    margin: 40px auto;
+
 }
 span{
     text-decoration: line-through;
 }
 a{
     font-size: 18px;
+}
+img{
+    border: 1px solid lightgreen;
+    width: inherit;
 }
 .active:active{
     color: brown;
@@ -34,7 +39,7 @@ a{
 }
 .back-attachment{
     background-image: url(data.jpg);
-    height: 700px;
+    height: 600px;
     background-attachment: fixed;
     padding-top: 70px;
 }
