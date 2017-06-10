@@ -38,7 +38,7 @@ img{
     text-align: right;
 }
 .back-attachment{
-    background-image: url(data.jpg);
+    background-image: url(imgs/data.jpg);
     height: 600px;
     background-attachment: fixed;
     padding-top: 70px;
