@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML5>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -6,29 +6,58 @@
 	<link rel="stylesheet" href="logo.css">
 </head>
 <body>
-<header>
-	<div>
-		<p>LOGO</p>
-		<a href="">ABOUT US</a>
-		<a href="">OUR TEAM</a>
-		<a href="">CONTACT US</a>
-		<button>SIGN IN</button>
-	</div>
+<header id="header">
+	<nav class="header">
+		<ul class="nav-header">
+			<li class="nav-logo">LOGO</li>
+			<li>
+				<ul class="nav-nav">
+					<li><a href="#about">ABOUT US</a></li>
+					<li><a href="#team">OUR TEAM</a></li>
+					<li><a href="#contacts">CONTACT US</a></li>
+					<li><button type="submit" value="SIGN IN" class="nav-button"><a href="logo.html">SIGN IN</a></button></li>
+			</li>
+	</nav>
 </header>
 <main>
-	<div class="mission">
+	<section id="mission">
 		<h2>Our Mission</h2>
-		<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500.</p>
-	</div>
-	<div class="about">
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+			Lorem Ipsum has been the industry's standard dummy text ever since the 1500.
+	</p>
+	</section>
+	<section id="about">
 		<h2>About</h2>
-	</div>
-	<div class="team">
+		<p>
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+			Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown.
+		</p>
+	</section>
+	<section id="team">
 		<h2>Team</h2>
-	</div>
-	<div class="map">
+		<div class="team-div"><ul class="team-list">
+				<li>
+					<img src="img/John1.png" alt="John Doe"/>
+					<h3>John Doe</h3>
+					<span>Founder &#38; CEO</span>
+				</li>
+				<li>
+					<img src="img/John2.png" alt="John Doe"/>
+					<h3>John Doe</h3>
+					<span>Co-founder</span>
+				</li>
+				<li>
+					<img src="img/John3.png" alt="John Doe"/>
+					<h3>John Doe</h3>
+					<span>Investor</span>
+				</li>
+			</ul></div>
+			<button type="button" value="WORK WITH US" class="button-work">WORK WITH US</button>
+	</section>
+	<section class="map">
 
-	</div>
+	</section>
 </main>
 <footer>
 	<div></div>
