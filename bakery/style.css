@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "Scriptina";
+    src: url("fonts/Scriptina.ttf");
+}
+
+@font-face {
+    font-family: "Alegreya";
+    src: url("fonts/Alegreya.otf");
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("fonts/PlayfairDisplay.ttf");
+}
+
+@font-face {
+    font-family: "Proxima Nova";
+    src: url("fonts/ProximaNova.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html body {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.cover_block {
+    height: 900px;
+    background: url("img/bg-header.jpg") no-repeat center center;
+    border-bottom: 10px solid #fff;
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.87);
+    text-align: center;
+}
+
+.cover_block header {
+    background-color: rgba(86, 83, 76, 0.53);
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.header_social ul {
+    list-style: none;
+}
+
+.header_nav nav,
+.header_social ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_logo {
+    width: 140px;
+    height: 44px;
+    color: #fff;
+    font: 30px/24px "Scriptina"
+}
+
+nav a,
+.our_description>button {
+    width: 770px;
+    color: #fff;
+    font: 14px/24px "Alegreya";
+    text-transform: uppercase;
+}
+
+nav a {
+    padding: 5px 0 5px;
+}
+
+nav a:hover,
+nav a:active {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-bottom: 3px solid #9e9c93;
+}
+
+.social_item>a>i {
+    width: 16px;
+    height: 13px;
+    color: #efebe4;
+}
+
+.our_description {
+    margin: 0 auto;
+    width: 939px;
+    height: 897px;
+}
+
+.description_bg {
+    background-color: rgba(131, 79, 78, 0);
+    background-image: radial-gradient(circle 457px at center, #564f4c 0%, rgba(86, 83, 76, 0) 100%, rgba(86, 83, 76, 0) 100%);
+    opacity: 0.71;
+    box-sizing: border-box;
+    width: inherit;
+    height: inherit;
+    position: relative;
+}
+
+.our_description>h2,
+.our_description>p {
+    text-shadow: 0 1px 0 #3d3029;
+    color: #fff;
+}
+
+.our_description>h2 {
+    font: 700 92px "Playfair Display";
+    letter-spacing: 8px;
+    margin: 213px auto 56px;
+}
+
+.our_description>img {
+    width: 190px;
+    height: 11px;
+}
+
+.our_description>p {
+    font: 400 24px/36px "Proxima Nova";
+    width: 544px;
+    margin: 69px auto;
+}
+
+.our_description>button {
+    width: 200px;
+    height: 50px;
+    border: 1px dashed #9e9c93;
+    background-color: rgba(86, 83, 76, 0.53);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    outline: none;
+}
+
+.our_description>button:hover {
+    background-color: rgba(86, 83, 76, 0.83);
+    font-size: 16px;
+}

@@ -1,0 +1,143 @@
+@font-face {
+	font-family: "Oswald-Light";
+	src: url("fonts/Oswald-Light.ttf");
+}
+@font-face {
+	font-family: "Oswald-Regular";
+	src: url("fonts/Oswald-Regular.ttf");
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	background-image: url("img/bg.png");
+}
+a {
+	text-decoration: none;
+	color: #b2b2b2;
+	display: flex;
+}
+ul {
+	list-style: none;
+	display: flex;
+}
+p {
+	color: #b2b2b2;
+}
+h2, h3, a{
+	text-transform: uppercase;
+}
+::-webkit-input-placeholder {
+	color: #e7e7e7;
+}
+.header_list-search {
+	justify-content: space-between;
+	margin: 25px 0;
+}
+.header_element {
+	display: flex;
+}
+.header_element>input, .header_element>button {
+	height: 30px;
+	outline: none;
+}
+.header_element>input {
+	border: 1px solid #b2b2b2;
+	padding: 8px;
+}
+.header_element>button {
+	background-color: #29c5e6;
+	color: #fff;
+	width: 40px;
+	border: none;
+	text-transform: uppercase;
+	cursor: pointer;
+	font: 14px "Oswald-Regular";
+}
+.header_element>button:hover {
+	border: 1px solid #b2b2b2;
+	color: #b2b2b2;
+}
+.header_navigation-list {
+	background-color: #f3f3f3;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.header_navigation-element {
+	height: 60px;
+	text-align: center;
+	/*padding: 0 10px;*/
+	box-sizing: border-box;
+	width: calc(100% / 8);
+	flex-basis: 100px;
+	flex-grow: 1;
+	background-image: url("img/bg.png");
+}
+.header_navigation-element>a {
+	height: inherit;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	font: 14px/40px "Oswald-Regular";
+}
+.header_navigation-element:hover, .header_navigation-element__active {
+	background-image: none;
+	background-color: #29c5e6;
+}
+.header_navigation-element:hover a, .header_navigation-element__active a {
+	color: #fff;
+}
+.main_slider, .main_articles {
+	margin-top: 30px;
+}
+.main_slider-element {
+	background-color: #e2e2e2;
+	height: 200px;
+	padding: 35px;
+	font-family: "Oswald-Light";
+}
+.main_slider-element>h2 {
+	font-size: 42px;
+	color: #5a5a5a;
+}
+.main_slider-element>p {
+	font-size: 20px;
+	line-height: 16px;
+	color: #b0b0b0;
+}
+.main_slider-navigation {
+	padding: 30px 0;
+	background-color: #f0f0f0;
+	justify-content: space-around;
+	counter-reset: list1;
+}
+.main_slider-navigation-element {
+	position: relative;
+}
+.main_slider-navigation a {
+	font: 18px/16px "Oswald-Light";
+	color: #aaa;
+}
+.main_slider-navigation-element:hover a {
+	color: #29c5e6;
+}
+.main_slider-navigation-element::before {
+	display: inline-block;
+	width: 15px;
+	height: 17px;
+	counter-increment: list1;
+	content: counter(list1);
+	position: absolute;
+	top: -7px;
+	left: -33px;
+	padding: 8px 5px;
+	text-align: center;
+	background-color: #8f8f8f;
+	color: #fff;
+}
+.main_slider-navigation-element:hover::before {
+	background-color: #29c5e6;
+}
